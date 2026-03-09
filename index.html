@@ -1,5 +1,306 @@
 <!DOCTYPE html>
-<html>
-<head><title>My Website</title></head>
-<body><h1>Hello World! This is my GitHub site.</h1></body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Our Apps | Hadi88 Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        
+        :root {
+            --hadi-orange: #ff8c00;
+            --hadi-black: #050505;
+            --hadi-gray: #121212;
+        }
+
+        body {
+            background-color: var(--hadi-black);
+            color: #ffffff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: 
+                radial-gradient(circle at 0% 0%, rgba(255, 140, 0, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 100% 100%, rgba(255, 140, 0, 0.03) 0%, transparent 40%);
+        }
+
+        .glass-card {
+            background: rgba(18, 18, 18, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(255, 140, 0, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .feature-tag {
+            background: rgba(255, 140, 0, 0.1);
+            color: var(--hadi-orange);
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-premium {
+            background: linear-gradient(135deg, #ff8c00, #e67e00);
+            color: black;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-premium:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
+        }
+
+        .app-icon-box {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #222, #111);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Back Button */
+        .back-nav {
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <nav class="back-nav sticky top-0 z-[100] px-6 py-4 flex items-center justify-between">
+        <a href="javascript:history.back()" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-900 text-zinc-400">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h1 class="text-sm font-black uppercase tracking-[0.2em] text-white">Our Applications</h1>
+        <div class="w-10"></div> </nav>
+
+    <div class="max-w-xl mx-auto px-6 pt-8 space-y-8">
+        
+        <div class="text-center space-y-2">
+            <h2 class="text-3xl font-extrabold text-white">The Hadi88 Ecosystem</h2>
+            <p class="text-zinc-500 text-xs font-medium leading-relaxed">High-performance tools for social growth, real-time connection, and financial management, secured by advanced encryption.</p>
+        </div>
+
+        <div class="glass-card p-6 space-y-6 border-orange-500/20 shadow-[0_0_30px_rgba(255,140,0,0.05)]">
+            <div class="flex items-center gap-4">
+                <div class="app-icon-box" style="background: linear-gradient(135deg, #ff8c00, #e67e00);">
+                    <i class="fa-solid fa-comments text-black text-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-black text-white">Hadi88 Messenger</h3>
+                    <p class="text-[10px] text-orange-400 font-bold uppercase tracking-wider">Fast & Secure Real-Time Chat</p>
+                </div>
+            </div>
+
+            <p class="text-zinc-400 text-xs leading-relaxed">
+                Experience lightning-fast communication with Pakistan's most reliable web messenger. Stay connected with friends through a platform built for speed and complete privacy.
+            </p>
+
+            <div class="grid grid-cols-1 gap-4">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="feature-tag">Connect</span>
+                    </div>
+                    <ul class="text-[11px] text-zinc-300 space-y-1.5 ml-1">
+                        <li><i class="fa-solid fa-check text-orange-500 mr-2"></i><b>Real-Time Presence:</b> See live typing status and PKT-localized last seen.</li>
+                        <li><i class="fa-solid fa-check text-orange-500 mr-2"></i><b>Full Control:</b> Unsend messages with "Delete for Everyone" technology.</li>
+                        <li><i class="fa-solid fa-check text-orange-500 mr-2"></i><b>Global Reach:</b> Crystal clear voice notes and secure calling integration.</li>
+                        <li><i class="fa-solid fa-check text-orange-500 mr-2"></i><b>PWA Ready:</b> Install directly to your home screen for instant access.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="/" class="btn-premium w-full py-4 rounded-2xl flex items-center justify-center gap-2 text-xs">
+                <span>Start Chatting Now</span>
+                <i class="fa-solid fa-paper-plane text-[10px]"></i>
+            </a>
+        </div>
+
+        <div class="glass-card p-6 space-y-6">
+            <div class="flex items-center gap-4">
+                <div class="app-icon-box">
+                    <i class="fa-solid fa-bolt text-orange-500 text-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-black text-white">EngageX (hadi88)</h3>
+                    <p class="text-[10px] text-zinc-400 font-bold uppercase tracking-wider">Social Media Marketing Panel</p>
+                </div>
+            </div>
+
+            <p class="text-zinc-400 text-xs leading-relaxed">
+                A secure SMM platform built for loyalty. Highlighting automated rewards and enterprise-grade data protection.
+            </p>
+
+            <div class="grid grid-cols-1 gap-4">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="feature-tag">Rewards</span>
+                    </div>
+                    <ul class="text-[11px] text-zinc-300 space-y-1.5 ml-1">
+                        <li><i class="fa-solid fa-check text-orange-500 mr-2"></i>7-Day Loyalty Streak: Unlock PRO status for 3 days.</li>
+                        <li><i class="fa-solid fa-check text-orange-500 mr-2"></i>Free TikTok Trial: 100 followers instantly for new users.</li>
+                        <li><i class="fa-solid fa-check text-orange-500 mr-2"></i>5% Referral Commission on every friend's deposit.</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="feature-tag">Smart Tech</span>
+                    </div>
+                    <ul class="text-[11px] text-zinc-300 space-y-1.5 ml-1">
+                        <li><i class="fa-solid fa-check text-orange-500 mr-2"></i>Multi-Currency Sync (PKR, INR, USD).</li>
+                        <li><i class="fa-solid fa-check text-orange-500 mr-2"></i>Instant Background Tracking with Huey & Auto-Refunds.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="https://panelpromax.pythonanywhere.com" class="btn-premium w-full py-4 rounded-2xl flex items-center justify-center gap-2 text-xs">
+                <span>Access EngageX Now</span>
+                <i class="fa-solid fa-up-right-from-square text-[10px]"></i>
+            </a>
+        </div>
+
+        <div class="glass-card p-6 space-y-6">
+            <div class="flex items-center gap-4">
+                <div class="app-icon-box">
+                    <i class="fa-solid fa-shield-halved text-blue-500 text-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-black text-white">FinControl Pro</h3>
+                    <p class="text-[10px] text-zinc-400 font-bold uppercase tracking-wider">Personal Finance Management</p>
+                </div>
+            </div>
+
+            <p class="text-zinc-400 text-xs leading-relaxed">
+                A bank-grade security system for personal wealth tracking with zero-knowledge architecture.
+            </p>
+
+            <div class="grid grid-cols-1 gap-4">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="feature-tag">Security</span>
+                    </div>
+                    <ul class="text-[11px] text-zinc-300 space-y-1.5 ml-1">
+                        <li><i class="fa-solid fa-lock text-blue-500 mr-2"></i>User-Specific XOR Encryption for all backups.</li>
+                        <li><i class="fa-solid fa-cloud-arrow-up text-blue-500 mr-2"></i>Encrypted Cloud Sync via Rclone (Google Drive).</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="feature-tag">Automation</span>
+                    </div>
+                    <ul class="text-[11px] text-zinc-300 space-y-1.5 ml-1">
+                        <li><i class="fa-solid fa-robot text-blue-500 mr-2"></i>Smart Auto-Deductions on the 2nd of every month.</li>
+                        <li><i class="fa-solid fa-chart-pie text-blue-500 mr-2"></i>Professional XLSX Audit Reports with doughnut charts.</li>
+                        <li><i class="fa-solid fa-bell text-blue-500 mr-2"></i>Budget Stress Alerts (Yellow/Red at 70/90%).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="https://myfin.pythonanywhere.com/login?next=%2F" class="bg-zinc-100 hover:bg-white text-black font-black uppercase tracking-wider text-xs w-full py-4 rounded-2xl flex items-center justify-center gap-2 transition-all">
+                <span>Explore FinControl Pro</span>
+                <i class="fa-solid fa-fingerprint text-[10px]"></i>
+            </a>
+        </div>
+
+        <div class="glass-card p-6 space-y-6 border-indigo-500/20 shadow-[0_0_30px_rgba(99,102,241,0.05)]">
+            <div class="flex items-center gap-4">
+                <div class="app-icon-box" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
+                    <i class="fa-solid fa-brain text-white text-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-black text-white">StudyKit Brain</h3>
+                    <p class="text-[10px] text-indigo-400 font-bold uppercase tracking-wider">AI Cognitive Mastery Hub</p>
+                </div>
+            </div>
+
+            <p class="text-zinc-400 text-xs leading-relaxed">
+                Transform textbook notes into long-term mastery using AI-powered cognitive science and memory anchors. Connect past learning with new concepts instantly.
+            </p>
+
+            <div class="grid grid-cols-1 gap-4">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="feature-tag" style="background: rgba(99, 102, 241, 0.1); color: #a5b4fc;">Cognitive Tech</span>
+                    </div>
+                    <ul class="text-[11px] text-zinc-300 space-y-1.5 ml-1">
+                        <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i><b>ELI5 Insights:</b> Jargon-free explanations that make complex ideas stick.</li>
+                        <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i><b>Mental Models:</b> Real-world analogies used as anchors for your memory.</li>
+                        <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i><b>Active Recall:</b> Deep-application questions, flashcards, and instant quizzes.</li>
+                        <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i><b>Spaced Repetition:</b> AI-calculated 24h/3d schedules for perfect review.</li>
+                        <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i><b>Smart History:</b> Tracks previous study topics to build contextual links.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="https://Hadinoman.pythonanywhere.com" class="btn-premium w-full py-4 rounded-2xl flex items-center justify-center gap-2 text-xs" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: white;">
+                <span>Optimize Your Learning</span>
+                <i class="fa-solid fa-bolt-lightning text-[10px]"></i>
+            </a>
+        </div>
+
+        <div class="glass-card p-6 space-y-6 border-dashed border-purple-500/30">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="app-icon-box">
+                        <i class="fa-solid fa-clapperboard text-purple-500 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-black text-white">MovieVault Pro</h3>
+                        <p class="text-[10px] text-purple-400 font-bold uppercase tracking-wider">Shop Automation Software</p>
+                    </div>
+                </div>
+                <span class="bg-purple-500/10 text-purple-500 text-[9px] px-2 py-1 rounded font-black">UPCOMING</span>
+            </div>
+
+            <p class="text-zinc-400 text-xs leading-relaxed">
+                The ultimate automation tool for mobile shop owners. Turn your local drive into a secure, Netflix-style streaming hub for your customers.
+            </p>
+
+            <div class="grid grid-cols-1 gap-4">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="feature-tag" style="background: rgba(168, 85, 247, 0.1); color: #a855f7;">Retail Tech</span>
+                    </div>
+                    <ul class="text-[11px] text-zinc-300 space-y-1.5 ml-1">
+                        <li><i class="fa-solid fa-check text-purple-500 mr-2"></i><b>Auto-Sync Engine:</b> Instantly maps your local storage drive to the web.</li>
+                        <li><i class="fa-solid fa-check text-purple-500 mr-2"></i><b>5-Hour Smart Refresh:</b> Automated maintenance for all external links.</li>
+                        <li><i class="fa-solid fa-check text-purple-500 mr-2"></i><b>Secure Cloud Tunnel:</b> Access shop files anywhere via encrypted tunneling.</li>
+                        <li><i class="fa-solid fa-check text-purple-500 mr-2"></i><b>30-Day Trial System:</b> Built-in automated licensing for new retailers.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full py-4 rounded-2xl border border-zinc-800 flex items-center justify-center gap-2 text-[10px] font-black text-zinc-500 uppercase">
+                <i class="fa-solid fa-hourglass-half"></i>
+                <span>Beta Testing in Progress</span>
+            </div>
+        </div>
+
+        <p class="text-center text-[9px] text-zinc-600 font-bold uppercase tracking-[0.3em] pb-10">
+            © 2026 Hadi88 Software Laboratory
+        </p>
+
+    </div>
+
+</body>
 </html>
