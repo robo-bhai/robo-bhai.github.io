@@ -2,7 +2,7 @@
   "name": "Hadi88 Ecosystem",
   "short_name": "Hadi88",
   "description": "Professional suite for social growth, secure messaging, and financial mastery.",
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#050505",
