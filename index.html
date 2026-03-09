@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>M. Noman Ikram | AI-Powered Software Engineer & ERP Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+        
+        :root {
+            --hadi-gold: #FFD700;
+            --hadi-chocolate: #411900;
+            --hadi-black: #050505;
+            --hadi-gray: #121212;
+            --card-border: rgba(255, 215, 0, 0.15);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--hadi-black);
+            color: #f4f4f5;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-image: 
+                radial-gradient(circle at 0% 0%, rgba(65, 25, 0, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 100% 100%, rgba(255, 215, 0, 0.05) 0%, transparent 40%);
+        }
+
+        /* HEADER NAVIGATION */
+        .premium-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(5, 5, 5, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .glass-card {
+            background: rgba(18, 18, 18, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .glass-card:hover {
+            border-color: var(--hadi-gold);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(65, 25, 0, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #FFD700 0%, #ff9900 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-nav {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #a1a1aa;
+            position: relative;
+            padding: 8px 0;
+        }
+
+        .btn-nav::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--hadi-gold);
+            transition: width 0.3s ease;
+        }
+
+        .btn-nav:hover::after { width: 100%; }
+        .btn-nav:hover { color: #fff; }
+
+        .skill-badge {
+            background: linear-gradient(135deg, rgba(65, 25, 0, 0.4), rgba(10, 10, 10, 0.8));
+            border: 1px solid var(--card-border);
+            color: var(--hadi-gold);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .experience-line {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid var(--hadi-chocolate);
+        }
+
+        .experience-line::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            background: var(--hadi-gold);
+            border-radius: 50%;
+            box-shadow: 0 0 15px var(--hadi-gold);
+        }
+
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        
+        section { scroll-margin-top: 100px; }
+
+        /* HR Contact Action - Big Yellow Button */
+        .contact-pill {
+            background: var(--hadi-gold);
+            color: #000;
+            font-weight: 900;
+            padding: 12px 28px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+            display: inline-block;
+        }
+        .contact-pill:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+            background: #fff;
+        }
+    </style>
+</head>
+<body class="pb-20">
+
+    <header class="premium-nav">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-gold rounded flex items-center justify-center text-black font-black">N</div>
+                <span class="font-black text-white text-lg tracking-tighter uppercase">M. NOMAN IKRAM</span>
+            </div>
+            <nav class="hidden md:flex gap-6 lg:gap-8 items-center">
+                <a href="#about" class="btn-nav">About Me</a>
+                <a href="#education" class="btn-nav">Education</a>
+                <a href="#skills" class="btn-nav">Skills</a>
+                <a href="#experience" class="btn-nav">Experience</a>
+                <a href="#projects" class="btn-nav">Projects</a>
+            </nav>
+            <a href="https://wa.me/923000000000" class="contact-pill text-[11px] uppercase tracking-tighter">Hire Me</a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6">
+        
+        <section class="py-24 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 leading-tight">
+                    M. <span class="gradient-text uppercase">NOMAN IKRAM</span>
+                </h1>
+                <p class="text-zinc-400 font-bold uppercase tracking-[0.4em] text-xs mb-8">
+                    AI-Powered Software Engineer & ERP Systems Specialist
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-6 text-sm">
+                    <a href="mailto:nomanikram@email.com" class="flex items-center gap-2 text-zinc-300 hover:text-gold transition"><i class="fa-solid fa-envelope text-gold"></i> nomanikram@email.com</a>
+                    <a href="tel:+923000000000" class="flex items-center gap-2 text-zinc-300 hover:text-gold transition"><i class="fa-solid fa-phone text-gold"></i> +92 300 0000000</a>
+                    <span class="flex items-center gap-2 text-zinc-300"><i class="fa-solid fa-location-dot text-gold"></i> Lahore, Pakistan</span>
+                </div>
+            </div>
+            <div class="hidden lg:block">
+                <div class="w-64 h-64 border-2 border-dashed border-gold/20 rounded-full flex items-center justify-center p-4">
+                    <div class="w-full h-full bg-gradient-to-br from-chocolate to-black rounded-full flex items-center justify-center text-gold text-6xl font-black italic">
+                        AI
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <div class="lg:col-span-4 space-y-12">
+                
+                <section id="skills" class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-gold font-black text-xs uppercase tracking-widest mb-8 flex items-center gap-2">
+                        <i class="fa-solid fa-microchip"></i> Technical Arsenal
+                    </h3>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <p class="text-[9px] text-zinc-500 font-black mb-4 uppercase tracking-widest">AI & Intelligent Automation</p>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="skill-badge">AI-Powered Dev</div>
+                                <div class="skill-badge">Python Automation</div>
+                                <div class="skill-badge">LLM Prompting</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[9px] text-zinc-500 font-black mb-4 uppercase tracking-widest">Data & Enterprise Logic</p>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="skill-badge">Advanced MS Excel</div>
+                                <div class="skill-badge">ERP Systems</div>
+                                <div class="skill-badge">MySQL/SQLAlchemy</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[9px] text-zinc-500 font-black mb-4 uppercase tracking-widest">Core Development</p>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="skill-badge">Flask</div> 
+                                <div class="skill-badge">SocketIO</div>
+                                <div class="skill-badge">Tailwind CSS</div> 
+                                <div class="skill-badge">XOR Encryption</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="education" class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-gold font-black text-xs uppercase tracking-widest mb-8 flex items-center gap-2">
+                        <i class="fa-solid fa-user-graduate"></i> Education
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="relative pl-6 border-l border-zinc-800">
+                            <h4 class="font-bold text-white text-sm">DAE in Civil Engineering</h4>
+                            <p class="text-[10px] text-zinc-500 italic uppercase mt-1">Technical Education Board</p>
+                        </div>
+                        <div class="relative pl-6 border-l border-zinc-800">
+                            <h4 class="font-bold text-white text-sm">ICs (Computer Science)</h4>
+                            <p class="text-[10px] text-zinc-500 italic uppercase mt-1">Undergraduate Study (Incomp.)</p>
+                        </div>
+                        <div class="relative pl-6 border-l border-zinc-800">
+                            <h4 class="font-bold text-white text-sm">Matriculation</h4>
+                            <p class="text-[10px] text-zinc-500 italic uppercase mt-1">Science Group</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="lg:col-span-8 space-y-24">
+                
+                <section id="about">
+                    <div class="flex items-center gap-4 mb-8">
+                        <h2 class="text-3xl font-black text-white">About Me</h2>
+                        <div class="h-[2px] flex-grow bg-gradient-to-r from-gold/50 to-transparent"></div>
+                    </div>
+                    <div class="glass-card p-10 rounded-[2.5rem] relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-8 opacity-5 text-gold text-6xl"><i class="fa-solid fa-quote-right"></i></div>
+                        <p class="text-zinc-400 text-sm md:text-base leading-relaxed">
+                            I am an <span class="text-white font-bold">AI-Powered Software Engineer</span> and industrial systems specialist. My expertise lies in leveraging Artificial Intelligence to accelerate software development and automate complex industrial workflows. Currently optimizing resource planning at <span class="text-white font-semibold">Sapphire Fibers Limited</span>, I am dedicated to building intelligent, secure, and highly-responsive digital ecosystems.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="experience">
+                    <div class="flex items-center gap-4 mb-10">
+                        <h2 class="text-3xl font-black text-white">Experience</h2>
+                        <div class="h-[2px] flex-grow bg-gradient-to-r from-gold/50 to-transparent"></div>
+                    </div>
+                    
+                    <div class="space-y-12">
+                        <div class="experience-line">
+                            <div class="glass-card p-10 rounded-[2.5rem]">
+                                <div class="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
+                                    <div>
+                                        <h4 class="text-2xl font-black text-white tracking-tight">Data Entry Operator (ERP)</h4>
+                                        <p class="text-gold font-bold text-xs uppercase tracking-[0.2em] mt-1">Sapphire Fibers Limited | Knitting Unit</p>
+                                    </div>
+                                    <span class="text-[10px] font-black text-gold bg-gold/10 px-4 py-2 rounded-full mono border border-gold/20">2025 — PRESENT</span>
+                                </div>
+                                <ul class="text-zinc-400 text-sm space-y-4 list-none">
+                                    <li class="flex gap-4"><i class="fa-solid fa-check text-gold mt-1.5 text-xs"></i> Facilitate full-cycle fabric roll feeding and dispatch processing within the corporate ERP system.</li>
+                                    <li class="flex gap-4"><i class="fa-solid fa-check text-gold mt-1.5 text-xs"></i> Collaborate with PPC to manage production "Lots" and ensure machine alignment with planning schedules.</li>
+                                    <li class="flex gap-4"><i class="fa-solid fa-check text-gold mt-1.5 text-xs"></i> <b>Advanced Data Management:</b> Utilize MS Excel for complex production tracking, data cleaning, and reporting audits.</li>
+                                    <li class="flex gap-4"><i class="fa-solid fa-check text-gold mt-1.5 text-xs"></i> Maintain 100% data integrity for daily dispatch orders and inventory movement.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="experience-line">
+                            <div class="glass-card p-10 rounded-[2.5rem] opacity-70 hover:opacity-100 transition">
+                                <div class="flex flex-col md:flex-row justify-between items-start gap-4 mb-4">
+                                    <div>
+                                        <h4 class="text-xl font-black text-zinc-300">Clerk</h4>
+                                        <p class="text-zinc-500 font-bold text-xs uppercase tracking-widest mt-1">Production Department</p>
+                                    </div>
+                                    <span class="text-[10px] font-black text-zinc-500 px-4 py-2 rounded-full mono">2022 — 2025</span>
+                                </div>
+                                <p class="text-zinc-500 text-sm italic leading-relaxed">Streamlined departmental documentation, production inventory logs, and reporting workflows for peak departmental efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <div class="flex items-center gap-4 mb-10">
+                        <h2 class="text-3xl font-black text-white">Hadi88 Ecosystem</h2>
+                        <div class="h-[2px] flex-grow bg-gradient-to-r from-gold/50 to-transparent"></div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glass-card p-8 rounded-[2rem] flex flex-col justify-between">
+                            <div>
+                                <div class="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-500 border border-orange-500/20 mb-6">
+                                    <i class="fa-solid fa-comments text-2xl"></i>
+                                </div>
+                                <h5 class="font-black text-white text-base mb-2 uppercase tracking-tight">Hadi88 Messenger</h5>
+                                <p class="text-[11px] text-zinc-500 leading-relaxed mb-8">High-performance Real-Time PWA Web Chat platform optimized for speed and encrypted communication.</p>
+                            </div>
+                            <a href="https://chats88.pythonanywhere.com" target="_blank" class="block w-full text-center py-4 bg-white/5 hover:bg-gold hover:text-black rounded-2xl text-[11px] font-black transition-all uppercase tracking-widest">Launch Messenger</a>
+                        </div>
+
+                        <div class="glass-card p-8 rounded-[2rem] flex flex-col justify-between">
+                            <div>
+                                <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center text-gold border border-gold/20 mb-6">
+                                    <i class="fa-solid fa-bolt text-2xl"></i>
+                                </div>
+                                <h5 class="font-black text-white text-base mb-2 uppercase tracking-tight">EngageX SMM Panel</h5>
+                                <p class="text-[11px] text-zinc-500 leading-relaxed mb-8">Automated Social Media Marketing Platform featuring smart sync technology and reward streaks.</p>
+                            </div>
+                            <a href="https://panelpromax.pythonanywhere.com" target="_blank" class="block w-full text-center py-4 bg-white/5 hover:bg-gold hover:text-black rounded-2xl text-[11px] font-black transition-all uppercase tracking-widest">Open Dashboard</a>
+                        </div>
+
+                        <div class="glass-card p-8 rounded-[2rem] flex flex-col justify-between">
+                            <div>
+                                <div class="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500 border border-blue-500/20 mb-6">
+                                    <i class="fa-solid fa-shield-halved text-2xl"></i>
+                                </div>
+                                <h5 class="font-black text-white text-base mb-2 uppercase tracking-tight">FinControl Pro</h5>
+                                <p class="text-[11px] text-zinc-500 leading-relaxed mb-8">Secure personal wealth tracking system utilizing advanced XOR Encryption and cloud backups.</p>
+                            </div>
+                            <a href="https://myfin.pythonanywhere.com/login?next=%2F" target="_blank" class="block w-full text-center py-4 bg-white/5 hover:bg-gold hover:text-black rounded-2xl text-[11px] font-black transition-all uppercase tracking-widest">Financial Portal</a>
+                        </div>
+
+                        <div class="glass-card p-8 rounded-[2rem] flex flex-col justify-between">
+                            <div>
+                                <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-500 border border-indigo-500/20 mb-6">
+                                    <i class="fa-solid fa-brain text-2xl"></i>
+                                </div>
+                                <h5 class="font-black text-white text-base mb-2 uppercase tracking-tight">StudyKit Brain</h5>
+                                <p class="text-[11px] text-zinc-500 leading-relaxed mb-8">Cognitive mastery hub leveraging AI to transform textbook notes into long-term memory anchors.</p>
+                            </div>
+                            <a href="https://Hadinoman.pythonanywhere.com" target="_blank" class="block w-full text-center py-4 bg-white/5 hover:bg-gold hover:text-black rounded-2xl text-[11px] font-black transition-all uppercase tracking-widest">Start Learning</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="mt-40 py-20 border-t border-white/5 text-center">
+            <div class="mb-8 flex justify-center gap-6 text-zinc-500">
+                <a href="https://wa.me/923000000000" class="hover:text-gold transition text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="text-[10px] text-zinc-600 font-bold uppercase tracking-[0.6em] mono">
+                &copy; 2026 M. NOMAN IKRAM // ENGINEERED BY HADI88 LABS
+            </p>
+        </footer>
+    </main>
+
+</body>
+</html>
