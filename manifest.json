@@ -39,27 +39,13 @@
       "purpose": "maskable"
     }
   ],
-  "shortcuts": [
+  "screenshots": [
     {
-      "name": "Social",
-      "short_name": "Social",
-      "description": "View your chats and friends",
-      "url": "/dashboard",
-      "icons": [{ "src": "2.jpg", "sizes": "192x192" }]
-    },
-    {
-      "name": "Friends",
-      "short_name": "Friends",
-      "description": "Manage your friend requests",
-      "url": "/friends",
-      "icons": [{ "src": "2.jpg", "sizes": "192x192" }]
-    },
-    {
-      "name": "Calls",
-      "short_name": "Calls",
-      "description": "Make or view calls",
-      "url": "/calls",
-      "icons": [{ "src": "2.jpg", "sizes": "192x192" }]
+      "src": "a.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Hadi88 Home Screen"
     }
   ]
 }
