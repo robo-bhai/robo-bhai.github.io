@@ -15,11 +15,19 @@
             --card-bg: rgba(18, 18, 18, 0.7);
         }
 
+        html { scroll-behavior: smooth; }
+
         body {
             background-color: var(--hadi-black);
             color: #ffffff;
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-image: radial-gradient(circle at top right, rgba(255, 215, 0, 0.05), transparent);
+        }
+
+        .glass-nav {
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .glass-card {
@@ -50,14 +58,37 @@
             -webkit-text-fill-color: transparent;
         }
 
+        .nav-btn {
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #a1a1aa;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover { color: var(--hadi-gold); }
+
         .mono { font-family: 'JetBrains Mono', monospace; }
     </style>
 </head>
-<body class="p-4 md:p-12">
+<body class="pb-12">
 
-    <div class="max-w-5xl mx-auto">
+    <nav class="glass-nav sticky top-0 z-[500] px-4 py-4">
+        <div class="max-w-5xl mx-auto flex justify-center md:justify-between items-center">
+            <div class="hidden md:block font-black text-gold text-sm tracking-tighter">MNI.LOG</div>
+            <div class="flex gap-4 md:gap-8">
+                <a href="#about" class="nav-btn">About</a>
+                <a href="#education" class="nav-btn">Education</a>
+                <a href="#experience" class="nav-btn">Experience</a>
+                <a href="#projects" class="nav-btn">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-4">
         
-        <header class="text-center mb-16">
+        <header class="text-center mt-16 mb-24">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4 whitespace-nowrap">
                 M. <span class="gradient-text uppercase">NOMAN IKRAM</span>
             </h1>
@@ -66,7 +97,7 @@
             </p>
             
             <div class="flex flex-wrap justify-center gap-6 mt-8 text-sm text-zinc-300">
-                <a href="mailto:noman@example.com" class="hover:text-gold transition flex items-center gap-2">
+                <a href="mailto:nomanikram@email.com" class="hover:text-gold transition flex items-center gap-2">
                     <i class="fa-solid fa-envelope text-gold"></i> nomanikram@email.com
                 </a>
                 <a href="tel:+923000000000" class="hover:text-gold transition flex items-center gap-2">
@@ -75,20 +106,20 @@
                 <span class="flex items-center gap-2">
                     <i class="fa-solid fa-location-dot text-gold"></i> Lahore, Pakistan
                 </span>
-                <a href="https://wa.me/923000000000" class="hover:text-green-400 transition flex items-center gap-2">
+                <a href="https://wa.me/923000000000" target="_blank" class="hover:text-green-400 transition flex items-center gap-2">
                     <i class="fa-brands fa-whatsapp text-green-500"></i> WhatsApp
                 </a>
             </div>
         </header>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
-            <div class="space-y-8">
+            <div class="space-y-12">
                 
                 <section class="glass-card p-6 rounded-3xl">
                     <h3 class="text-gold font-black text-sm uppercase tracking-widest mb-6 border-b border-white/10 pb-2">Professional Skills</h3>
                     
-                    <div class="space-y-4">
+                    <div class="space-y-5">
                         <div>
                             <p class="text-[10px] text-zinc-500 font-bold mb-2 uppercase tracking-tighter">AI & Intelligent Automation</p>
                             <div class="flex flex-wrap gap-2">
@@ -116,95 +147,128 @@
                     </div>
                 </section>
 
-                <section class="glass-card p-6 rounded-3xl">
+                <section id="education" class="glass-card p-6 rounded-3xl scroll-mt-24">
                     <h3 class="text-gold font-black text-sm uppercase tracking-widest mb-6 border-b border-white/10 pb-2">Education</h3>
-                    <div class="space-y-4">
+                    <div class="space-y-5">
                         <div>
-                            <h4 class="font-bold text-white">DAE in Civil Engineering</h4>
-                            <p class="text-xs text-zinc-500 italic uppercase">Technical Education Board</p>
+                            <h4 class="font-bold text-white text-sm">DAE in Civil Engineering</h4>
+                            <p class="text-[10px] text-zinc-500 italic uppercase mt-1">Technical Education Board</p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-white">ICs (Computer Science)</h4>
-                            <p class="text-xs text-zinc-500 italic uppercase">Undergraduate Study (Incomp.)</p>
+                            <h4 class="font-bold text-white text-sm">ICs (Computer Science)</h4>
+                            <p class="text-[10px] text-zinc-500 italic uppercase mt-1">Undergraduate Study (Incomp.)</p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-white">Matriculation</h4>
-                            <p class="text-xs text-zinc-500 italic uppercase">Science Group</p>
+                            <h4 class="font-bold text-white text-sm">Matriculation</h4>
+                            <p class="text-[10px] text-zinc-500 italic uppercase mt-1">Science Group</p>
                         </div>
                     </div>
                 </section>
             </div>
 
-            <div class="lg:col-span-2 space-y-8">
+            <div class="lg:col-span-2 space-y-16">
                 
-                <section class="glass-card p-8 rounded-3xl">
-                    <h3 class="text-gold font-black text-sm uppercase tracking-widest mb-4">About Me</h3>
-                    <p class="text-zinc-400 text-sm leading-relaxed">
-                        I am an <span class="text-white font-bold">AI-Powered Software Engineer</span> and industrial systems specialist. My expertise lies in leveraging Artificial Intelligence to accelerate software development and automate complex industrial workflows. Currently optimizing resource planning at <span class="text-white font-semibold">Sapphire Fibers Limited</span>, I am dedicated to building intelligent, secure, and highly-responsive digital ecosystems.
-                    </p>
-                </section>
-
-                <section class="space-y-6">
-                    <h3 class="text-gold font-black text-sm uppercase tracking-widest px-2">Work Experience</h3>
-                    
-                    <div class="glass-card p-8 rounded-3xl relative">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h4 class="text-xl font-extrabold">Data Entry Operator (ERP)</h4>
-                                <p class="text-gold font-bold text-xs uppercase">Sapphire Fibers Limited | Knitting Unit</p>
-                            </div>
-                            <span class="text-[10px] bg-white/5 px-3 py-1 rounded-full font-mono">2025 — PRESENT</span>
-                        </div>
-                        <ul class="text-zinc-400 text-sm space-y-2 list-none">
-                            <li class="flex gap-2"><i class="fa-solid fa-caret-right text-gold mt-1"></i> Facilitate full-cycle fabric roll feeding and dispatch processing within the corporate ERP system.</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-caret-right text-gold mt-1"></i> Collaborate with PPC to manage production "Lots" and ensure machine alignment with planning schedules.</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-caret-right text-gold mt-1"></i> <b>Advanced Data Management:</b> Utilize MS Excel for complex production tracking, data cleaning, and reporting audits.</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-caret-right text-gold mt-1"></i> Maintain 100% data integrity for daily dispatch orders and inventory movement.</li>
-                        </ul>
-                    </div>
-
+                <section id="about" class="scroll-mt-24">
+                    <h2 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                        <span class="w-8 h-px bg-gold"></span> About Me
+                    </h2>
                     <div class="glass-card p-8 rounded-3xl">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h4 class="text-xl font-extrabold text-zinc-300">Clerk</h4>
-                                <p class="text-zinc-500 font-bold text-xs uppercase">Production Department</p>
-                            </div>
-                            <span class="text-[10px] bg-white/5 px-3 py-1 rounded-full font-mono">2022 — 2025</span>
-                        </div>
-                        <p class="text-zinc-500 text-sm italic">Streamlined departmental documentation, production inventory logs, and reporting workflows.</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            I am an <span class="text-white font-bold">AI-Powered Software Engineer</span> and industrial systems specialist. My expertise lies in leveraging Artificial Intelligence to accelerate software development and automate complex industrial workflows. Currently optimizing resource planning at <span class="text-white font-semibold">Sapphire Fibers Limited</span>, I am dedicated to building intelligent, secure, and highly-responsive digital ecosystems.
+                        </p>
                     </div>
                 </section>
 
-                <section class="space-y-6">
-                    <h3 class="text-gold font-black text-sm uppercase tracking-widest px-2">AI-Driven Projects (Hadi88)</h3>
+                <section id="experience" class="scroll-mt-24">
+                    <h2 class="text-2xl font-black text-white mb-8 flex items-center gap-3">
+                        <span class="w-8 h-px bg-gold"></span> Work Experience
+                    </h2>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="glass-card p-6 rounded-2xl">
-                            <h5 class="font-black text-white text-sm mb-1 uppercase">Hadi88 Messenger</h5>
-                            <p class="text-[10px] text-zinc-500 mb-4">Real-Time PWA Web Chat</p>
-                            <a href="https://chats88.pythonanywhere.com" class="text-gold text-[10px] font-bold underline hover:text-white transition">LAUNCH APPLICATION</a>
+                    <div class="space-y-8">
+                        <div class="glass-card p-8 rounded-3xl relative">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="text-xl font-extrabold">Data Entry Operator (ERP)</h4>
+                                    <p class="text-gold font-bold text-xs uppercase">Sapphire Fibers Limited | Knitting Unit</p>
+                                </div>
+                                <span class="text-[10px] bg-white/5 px-3 py-1 rounded-full font-mono">2025 — PRESENT</span>
+                            </div>
+                            <ul class="text-zinc-400 text-sm space-y-3 list-none">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-gold text-[10px] mt-1.5"></i> Facilitate full-cycle fabric roll feeding and dispatch processing within the corporate ERP system.</li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-gold text-[10px] mt-1.5"></i> Collaborate with PPC to manage production "Lots" and ensure machine alignment with planning schedules.</li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-gold text-[10px] mt-1.5"></i> <b>Advanced Data Management:</b> Utilize MS Excel for complex production tracking, data cleaning, and reporting audits.</li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-gold text-[10px] mt-1.5"></i> Maintain 100% data integrity for daily dispatch orders and inventory movement.</li>
+                            </ul>
                         </div>
-                        <div class="glass-card p-6 rounded-2xl">
-                            <h5 class="font-black text-white text-sm mb-1 uppercase">EngageX SMM Panel</h5>
-                            <p class="text-[10px] text-zinc-500 mb-4">Automated Marketing Platform</p>
-                            <a href="https://panelpromax.pythonanywhere.com" class="text-gold text-[10px] font-bold underline hover:text-white transition">VIEW DASHBOARD</a>
+
+                        <div class="glass-card p-8 rounded-3xl">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="text-xl font-extrabold text-zinc-300">Clerk</h4>
+                                    <p class="text-zinc-500 font-bold text-xs uppercase">Production Department</p>
+                                </div>
+                                <span class="text-[10px] bg-white/5 px-3 py-1 rounded-full font-mono">2022 — 2025</span>
+                            </div>
+                            <p class="text-zinc-500 text-sm italic leading-relaxed">Streamlined departmental documentation, production inventory logs, and reporting workflows for peak departmental efficiency.</p>
                         </div>
-                        <div class="glass-card p-6 rounded-2xl">
-                            <h5 class="font-black text-white text-sm mb-1 uppercase">FinControl Pro</h5>
-                            <p class="text-[10px] text-zinc-500 mb-4">XOR Encrypted Finance Manager</p>
-                            <a href="https://myfin.pythonanywhere.com/login?next=%2F" class="text-gold text-[10px] font-bold underline hover:text-white transition">SECURITY HUB</a>
+                    </div>
+                </section>
+
+                <section id="projects" class="scroll-mt-24">
+                    <h2 class="text-2xl font-black text-white mb-8 flex items-center gap-3">
+                        <span class="w-8 h-px bg-gold"></span> AI-Driven Projects (Hadi88)
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="glass-card p-6 rounded-2xl border-orange-500/10">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-500">
+                                    <i class="fa-solid fa-comments"></i>
+                                </div>
+                                <h5 class="font-black text-white text-sm uppercase">Hadi88 Messenger</h5>
+                            </div>
+                            <p class="text-[10px] text-zinc-500 mb-6">Real-Time PWA Web Chat platform optimized for speed.</p>
+                            <a href="https://chats88.pythonanywhere.com" target="_blank" class="block w-full text-center py-2 bg-white/5 hover:bg-gold hover:text-black rounded-lg text-[10px] font-bold transition-all uppercase">Launch App</a>
                         </div>
+
                         <div class="glass-card p-6 rounded-2xl">
-                            <h5 class="font-black text-white text-sm mb-1 uppercase">StudyKit Brain</h5>
-                            <p class="text-[10px] text-zinc-500 mb-4">AI Cognitive Mastery Hub</p>
-                            <a href="https://Hadinoman.pythonanywhere.com" class="text-gold text-[10px] font-bold underline hover:text-white transition">OPEN ACADEMY</a>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center text-gold">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <h5 class="font-black text-white text-sm uppercase">EngageX SMM Panel</h5>
+                            </div>
+                            <p class="text-[10px] text-zinc-500 mb-6">Automated Marketing Platform with smart syncing.</p>
+                            <a href="https://panelpromax.pythonanywhere.com" target="_blank" class="block w-full text-center py-2 bg-white/5 hover:bg-gold hover:text-black rounded-lg text-[10px] font-bold transition-all uppercase">View Dashboard</a>
+                        </div>
+
+                        <div class="glass-card p-6 rounded-2xl">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-500">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <h5 class="font-black text-white text-sm uppercase">FinControl Pro</h5>
+                            </div>
+                            <p class="text-[10px] text-zinc-500 mb-6">XOR Encrypted personal wealth tracking system.</p>
+                            <a href="https://myfin.pythonanywhere.com/login?next=%2F" target="_blank" class="block w-full text-center py-2 bg-white/5 hover:bg-gold hover:text-black rounded-lg text-[10px] font-bold transition-all uppercase">Security Hub</a>
+                        </div>
+
+                        <div class="glass-card p-6 rounded-2xl">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-500">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+                                <h5 class="font-black text-white text-sm uppercase">StudyKit Brain</h5>
+                            </div>
+                            <p class="text-[10px] text-zinc-500 mb-6">AI-powered cognitive science and memory hub.</p>
+                            <a href="https://Hadinoman.pythonanywhere.com" target="_blank" class="block w-full text-center py-2 bg-white/5 hover:bg-gold hover:text-black rounded-lg text-[10px] font-bold transition-all uppercase">Open Academy</a>
                         </div>
                     </div>
                 </section>
             </div>
         </div>
 
-        <footer class="mt-20 py-8 border-t border-white/5 text-center">
+        <footer class="mt-32 py-12 border-t border-white/5 text-center">
             <p class="text-[10px] text-zinc-600 font-bold uppercase tracking-[0.4em] mono">
                 System Status: Active // Built by m_noman_ikram &copy; 2026
             </p>
@@ -213,4 +277,4 @@
 
 </body>
     </html>
-                                                                                                                            
+                        
