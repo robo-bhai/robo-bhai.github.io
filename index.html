@@ -2,315 +2,173 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Our Apps | Hadi88 Ecosystem</title>
-    <meta name="description" content="Discover the Hadi88 Ecosystem: High-performance tools for social growth, real-time messaging, and financial mastery.">
-    <meta name="theme-color" content="#050505">
-    <meta name="author" content="Hadi88 Software Laboratory">
-
-    <link rel="manifest" href="manifest.json">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Hadi88">
-    
-    <link rel="icon" type="image/jpeg" href="a.jpg">
-    <link rel="apple-touch-icon" href="a.jpg">
-    <link rel="apple-touch-startup-image" href="a.jpg">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Our Apps | Hadi88 Ecosystem">
-    <meta property="og:description" content="Access premium applications for communication, marketing, and productivity.">
-    <meta property="og:image" content="a.jpg">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Noman Ikram | Production & Systems Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
-        
         :root {
-            --hadi-orange: #ff8c00;
-            --hadi-black: #050505;
-            --hadi-gray: #121212;
-            --accent-indigo: #6366f1;
+            --bg: #0a0a0a;
+            --card: rgba(26, 26, 26, 0.6);
+            --gold: #FFD700;
+            --accent: #411900;
         }
-
-        /* CUSTOM SCROLLBAR */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: var(--hadi-black); }
-        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
-
-        body {
-            background-color: var(--hadi-black);
-            color: #ffffff;
+        body { 
+            background-color: var(--bg); 
+            color: #e5e5e5; 
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-image: 
-                radial-gradient(circle at 10% 10%, rgba(255, 140, 0, 0.05) 0%, transparent 40%),
-                radial-gradient(circle at 90% 90%, rgba(99, 102, 241, 0.05) 0%, transparent 40%);
-            background-attachment: fixed;
-            -webkit-font-smoothing: antialiased;
+            background-image: radial-gradient(circle at 10% 20%, rgba(65, 25, 0, 0.15) 0%, transparent 50%);
         }
-
-        .glass-card {
-            background: rgba(18, 18, 18, 0.7);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 28px;
-            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        .glass-card { 
+            background: var(--card); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            transition: all 0.3s ease;
         }
-
-        .glass-card:hover {
-            border-color: rgba(255, 140, 0, 0.4);
-            transform: translateY(-8px) scale(1.01);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
-        }
-
-        .feature-tag {
-            background: rgba(255, 140, 0, 0.12);
-            color: var(--hadi-orange);
-            font-size: 10px;
-            font-weight: 800;
-            text-transform: uppercase;
-            padding: 5px 12px;
-            border-radius: 10px;
-            letter-spacing: 0.8px;
-            display: inline-block;
-        }
-
-        .btn-premium {
-            background: linear-gradient(135deg, #ff8c00, #ff5f00);
-            color: #000;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-premium::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
-            transform: rotate(45deg);
-            transition: 0.6s;
-        }
-
-        .btn-premium:hover::after { left: 100%; }
-
-        .btn-premium:hover {
-            transform: scale(1.03);
-            box-shadow: 0 15px 30px rgba(255, 140, 0, 0.3);
-        }
-
-        .app-icon-box {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-
-        .nav-header {
-            background: rgba(5, 5, 5, 0.85);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        @media (max-width: 640px) {
-            .glass-card { border-radius: 22px; padding: 20px; }
-            .text-3xl { font-size: 1.875rem; }
+        .glass-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+        .text-gold { color: var(--gold); }
+        .bg-gold { background-color: var(--gold); }
+        .border-gold { border-color: var(--gold); }
+        .gradient-text {
+            background: linear-gradient(to right, #FFD700, #ff9900);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js')
-                    .then(reg => console.log('Hadi88 PWA: Service Worker Registered'))
-                    .catch(err => console.log('Hadi88 PWA: Service Worker Failed', err));
-            });
-        }
-    </script>
 </head>
-<body class="pb-20">
+<body class="antialiased selection:bg-gold selection:text-black">
 
-    <nav class="nav-header sticky top-0 z-[100] px-6 py-5 flex items-center justify-center">
-        <div class="flex items-center gap-3">
-            <div class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></div>
-            <h1 class="text-xs font-black uppercase tracking-[0.3em] text-zinc-400">Hadi88 Global Ecosystem</h1>
-        </div>
-    </nav>
-
-    <div class="max-w-2xl mx-auto px-6 pt-12 space-y-10">
+    <div class="max-w-6xl mx-auto px-6 py-12 md:py-20">
         
-        <div class="text-center space-y-4">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Professional <span class="text-orange-500">Suite</span></h2>
-            <p class="text-zinc-500 text-sm md:text-base font-medium leading-relaxed max-w-lg mx-auto">
-                Next-generation applications engineered for speed, security, and exponential growth. Experience the future of digital tools.
-            </p>
-        </div>
-
-        <div class="glass-card p-8 space-y-6 border-orange-500/20 shadow-[0_0_40px_rgba(255,140,0,0.08)]">
-            <div class="flex items-center gap-5">
-                <div class="app-icon-box" style="background: linear-gradient(135deg, #ff8c00, #ff5f00);">
-                    <i class="fa-solid fa-comments text-black text-3xl"></i>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-black text-white">Hadi88 Messenger</h3>
-                    <p class="text-[11px] text-orange-400 font-bold uppercase tracking-widest">Ultra-Secure Communication</p>
+        <header class="flex flex-col md:flex-row justify-between items-center mb-20 gap-8">
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4">
+                    M. <span class="gradient-text uppercase">Noman Ikram</span>
+                </h1>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm font-semibold uppercase tracking-widest text-gray-400">
+                    <span>Systems Specialist</span>
+                    <span class="text-gold">•</span>
+                    <span>Full Stack Developer</span>
+                    <span class="text-gold">•</span>
+                    <span>Automation Expert</span>
                 </div>
             </div>
-
-            <p class="text-zinc-400 text-sm leading-relaxed">
-                Pakistan's premium encrypted web messenger. Built with military-grade privacy features and lightning-fast real-time synchronization.
-            </p>
-
-            <div class="space-y-4">
-                <span class="feature-tag">Connect Pro</span>
-                <ul class="text-[12px] text-zinc-300 grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <li class="flex items-start"><i class="fa-solid fa-bolt text-orange-500 mt-1 mr-3"></i><span><b>Real-Time Sync:</b> Zero-latency typing & delivery status.</span></li>
-                    <li class="flex items-start"><i class="fa-solid fa-shield-check text-orange-500 mt-1 mr-3"></i><span><b>Privacy First:</b> Remote unsend & data wipe technology.</span></li>
-                    <li class="flex items-start"><i class="fa-solid fa-mobile-screen text-orange-500 mt-1 mr-3"></i><span><b>PWA Ready:</b> Native app experience in your browser.</span></li>
-                    <li class="flex items-start"><i class="fa-solid fa-microphone-lines text-orange-500 mt-1 mr-3"></i><span><b>Voice HD:</b> Crystal clear voice note compression.</span></li>
-                </ul>
+            <div class="flex gap-4">
+                <a href="#" class="bg-gold hover:scale-105 transition px-8 py-3 rounded-full text-black font-bold shadow-[0_0_20px_rgba(255,215,0,0.3)]">Download CV</a>
             </div>
+        </header>
 
-            <a href="https://chats88.pythonanywhere.com" target="_blank" class="btn-premium w-full py-4 rounded-2xl flex items-center justify-center gap-3 text-xs">
-                <span>Launch Messenger</span>
-                <i class="fa-solid fa-paper-plane text-[11px]"></i>
-            </a>
-        </div>
-
-        <div class="glass-card p-8 space-y-6">
-            <div class="flex items-center gap-5">
-                <div class="app-icon-box">
-                    <i class="fa-solid fa-bolt text-orange-500 text-3xl"></i>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-black text-white">EngageX</h3>
-                    <p class="text-[11px] text-zinc-400 font-bold uppercase tracking-widest">Social Growth Engine</p>
-                </div>
-            </div>
-
-            <p class="text-zinc-400 text-sm leading-relaxed">
-                The ultimate SMM powerhouse. Automate your social presence with instant delivery and advanced loyalty rewards.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="space-y-3">
-                    <span class="feature-tag">Rewards</span>
-                    <ul class="text-[11px] text-zinc-400 space-y-2">
-                        <li><i class="fa-solid fa-gift text-orange-500 mr-2"></i>7-Day Loyalty Streak</li>
-                        <li><i class="fa-solid fa-fire text-orange-500 mr-2"></i>Free TikTok Trial</li>
-                        <li><i class="fa-solid fa-users text-orange-500 mr-2"></i>5% Referral Bonus</li>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <aside class="lg:col-span-4 space-y-10">
+                
+                <section class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-gold font-bold mb-6 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-gold rounded-full"></span> CONTACT
+                    </h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between"><span class="text-gray-500">Location</span><span>Lahore, PK</span></li>
+                        <li class="flex justify-between"><span class="text-gray-500">GitHub</span><span class="text-gold">@m_noman_ikram</span></li>
+                        <li class="flex justify-between"><span class="text-gray-500">Status</span><span class="text-green-400">Available for Projects</span></li>
                     </ul>
-                </div>
-                <div class="space-y-3">
-                    <span class="feature-tag">Tech Specs</span>
-                    <ul class="text-[11px] text-zinc-400 space-y-2">
-                        <li><i class="fa-solid fa-globe text-orange-500 mr-2"></i>Multi-Currency Support</li>
-                        <li><i class="fa-solid fa-rotate text-orange-500 mr-2"></i>Auto-Refund System</li>
-                        <li><i class="fa-solid fa-gauge-high text-orange-500 mr-2"></i>Instant API Sync</li>
-                    </ul>
-                </div>
-            </div>
+                </section>
 
-            <a href="https://panelpromax.pythonanywhere.com" target="_blank" class="btn-premium w-full py-4 rounded-2xl flex items-center justify-center gap-3 text-xs">
-                <span>Access Dashboard</span>
-                <i class="fa-solid fa-chart-line text-[11px]"></i>
-            </a>
+                <section class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-gold font-bold mb-6 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-gold rounded-full"></span> CORE TECH
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">Python/Flask</span>
+                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">SQLAlchemy</span>
+                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">Termux Automation</span>
+                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">ERP Data Mgmt</span>
+                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">Tailwind CSS</span>
+                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">MySQL</span>
+                    </div>
+                </section>
+
+                <section class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-gold font-bold mb-6 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-gold rounded-full"></span> EDUCATION
+                    </h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-bold">DAE in Civil Engineering</p>
+                            <p class="text-xs text-gray-500">Technical Diploma</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">ICs (Computer Science)</p>
+                            <p class="text-xs text-gray-500">Incomplete Undergraduate Study</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Matriculation</p>
+                            <p class="text-xs text-gray-500">Secondary School Certificate</p>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+
+            <div class="lg:col-span-8 space-y-12">
+                
+                <section>
+                    <h2 class="text-3xl font-bold mb-6">About <span class="text-gold">Me</span></h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        Accomplished Systems Specialist currently managing ERP operations within the knitting unit at <span class="text-white font-semibold">Sapphire Fibers Limited</span>. I specialize in the intersection of industrial production and digital automation. From managing real-time fabric dispatch logic to developing custom Python-based tools, I bridge the gap between physical manufacturing and software efficiency.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-bold mb-8">Work Experience</h2>
+                    <div class="space-y-8">
+                        <div class="relative pl-8 border-l-2 border-gold/20">
+                            <div class="absolute w-4 h-4 bg-gold rounded-full -left-[9px] top-1"></div>
+                            <div class="flex flex-col md:flex-row justify-between mb-2">
+                                <h4 class="text-xl font-bold">Data Entry Operator (ERP User)</h4>
+                                <span class="text-gold text-sm font-mono">2025 — PRESENT</span>
+                            </div>
+                            <p class="text-gray-500 mb-4">Sapphire Fibers Limited | Knitting Unit</p>
+                            <ul class="text-sm text-gray-400 space-y-2 list-disc list-inside">
+                                <li>Orchestrate daily fabric feeding and dispatch operations via ERP systems.</li>
+                                <li>Execute production "Lot" creation based on PPC (Production Planning Control) mandates.</li>
+                                <li>Synchronize machine-fabric alignment to ensure zero-lag in dispatch cycles.</li>
+                                <li>Maintain 100% accuracy in high-volume fabric data logging for industrial audits.</li>
+                            </ul>
+                        </div>
+
+                        <div class="relative pl-8 border-l-2 border-gold/20">
+                            <div class="absolute w-4 h-4 bg-white/20 rounded-full -left-[9px] top-1"></div>
+                            <div class="flex flex-col md:flex-row justify-between mb-2">
+                                <h4 class="text-xl font-bold text-gray-300">Clerk</h4>
+                                <span class="text-gray-500 text-sm font-mono">2022 — 2025</span>
+                            </div>
+                            <p class="text-gray-500 mb-2">Production Department</p>
+                            <p class="text-sm text-gray-400 italic">Managed documentation, inventory logs, and departmental reporting within the manufacturing floor.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-bold mb-8">Featured Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-gold mb-2">Hadi88 SMM Panel</h4>
+                            <p class="text-xs text-gray-400">A full-stack social marketing platform with automated service tiers and subscription logic.</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-gold mb-2">Ludo Pro Multiplayer</h4>
+                            <p class="text-xs text-gray-400">Real-time multiplayer game built with Flask-SocketIO and custom UI logic.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
         </div>
 
-        <div class="glass-card p-8 space-y-6 border-blue-500/10">
-            <div class="flex items-center gap-5">
-                <div class="app-icon-box">
-                    <i class="fa-solid fa-shield-halved text-blue-500 text-3xl"></i>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-black text-white">FinControl Pro</h3>
-                    <p class="text-[11px] text-zinc-400 font-bold uppercase tracking-widest">Wealth & Asset Tracking</p>
-                </div>
-            </div>
-
-            <p class="text-zinc-400 text-sm leading-relaxed">
-                Bank-grade asset management featuring zero-knowledge XOR encryption and automated financial auditing.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="space-y-3">
-                    <span class="feature-tag" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">Security</span>
-                    <ul class="text-[11px] text-zinc-400 space-y-2">
-                        <li><i class="fa-solid fa-lock text-blue-500 mr-2"></i>XOR Data Encryption</li>
-                        <li><i class="fa-solid fa-cloud-check text-blue-500 mr-2"></i>Rclone Secure Sync</li>
-                    </ul>
-                </div>
-                <div class="space-y-3">
-                    <span class="feature-tag" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">Audit</span>
-                    <ul class="text-[11px] text-zinc-400 space-y-2">
-                        <li><i class="fa-solid fa-file-excel text-blue-500 mr-2"></i>XLSX Pro Reports</li>
-                        <li><i class="fa-solid fa-bell text-blue-500 mr-2"></i>Budget Stress Alerts</li>
-                    </ul>
-                </div>
-            </div>
-
-            <a href="https://myfin.pythonanywhere.com" target="_blank" class="bg-zinc-100 hover:bg-white text-black font-black uppercase tracking-widest text-xs w-full py-4 rounded-2xl flex items-center justify-center gap-3 transition-all">
-                <span>Manage Wealth</span>
-                <i class="fa-solid fa-fingerprint text-[11px]"></i>
-            </a>
-        </div>
-
-        <div class="glass-card p-8 space-y-6 border-indigo-500/20 shadow-[0_0_40px_rgba(99,102,241,0.08)]">
-            <div class="flex items-center gap-5">
-                <div class="app-icon-box" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
-                    <i class="fa-solid fa-brain text-white text-3xl"></i>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-black text-white">StudyKit Brain</h3>
-                    <p class="text-[11px] text-indigo-400 font-bold uppercase tracking-widest">Cognitive Intelligence</p>
-                </div>
-            </div>
-
-            <p class="text-zinc-400 text-sm leading-relaxed">
-                Transform information into mastery. AI-driven cognitive anchors using Spaced Repetition and ELI5 methodologies.
-            </p>
-
-            <div class="space-y-4">
-                <span class="feature-tag" style="background: rgba(99, 102, 241, 0.15); color: #a5b4fc;">Memory Science</span>
-                <ul class="text-[12px] text-zinc-300 space-y-2.5">
-                    <li class="flex items-center gap-3"><i class="fa-solid fa-microchip text-indigo-500"></i><b>Mental Models:</b> High-level concept anchoring.</li>
-                    <li class="flex items-center gap-3"><i class="fa-solid fa-clock-rotate-left text-indigo-500"></i><b>Active Recall:</b> Dynamic AI-generated quizzes.</li>
-                </ul>
-            </div>
-
-            <a href="https://Hadinoman.pythonanywhere.com" target="_blank" class="btn-premium w-full py-4 rounded-2xl flex items-center justify-center gap-3 text-xs" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: #fff;">
-                <span>Start Learning</span>
-                <i class="fa-solid fa-bolt-lightning text-[11px]"></i>
-            </a>
-        </div>
-
-        <div class="pt-10 pb-6 text-center space-y-4">
-            <div class="flex justify-center gap-6">
-                <a href="#" class="text-zinc-600 hover:text-white transition-colors text-lg"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="text-zinc-600 hover:text-white transition-colors text-lg"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="text-zinc-600 hover:text-white transition-colors text-lg"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <p class="text-[10px] text-zinc-700 font-black uppercase tracking-[0.4em]">
-                © 2026 Hadi88 Software Laboratory | All Rights Reserved
-            </p>
-        </div>
-
+        <footer class="mt-24 pt-8 border-t border-white/5 text-center text-xs text-gray-600 tracking-widest uppercase">
+            Designed for m_noman_ikram &copy; March 2026
+        </footer>
     </div>
 
 </body>
-    </html>
-                                
+                                                                  </html>
+                                                                  
