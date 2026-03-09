@@ -2,173 +2,209 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M. Noman Ikram | Production & Systems Specialist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>M. Noman Ikram | Professional Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        
         :root {
-            --bg: #0a0a0a;
-            --card: rgba(26, 26, 26, 0.6);
-            --gold: #FFD700;
-            --accent: #411900;
+            --hadi-orange: #ff8c00;
+            --hadi-gold: #FFD700;
+            --hadi-black: #050505;
+            --card-bg: rgba(18, 18, 18, 0.7);
         }
-        body { 
-            background-color: var(--bg); 
-            color: #e5e5e5; 
+
+        body {
+            background-color: var(--hadi-black);
+            color: #ffffff;
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-image: radial-gradient(circle at 10% 20%, rgba(65, 25, 0, 0.15) 0%, transparent 50%);
+            background-image: radial-gradient(circle at top right, rgba(255, 215, 0, 0.05), transparent);
         }
-        .glass-card { 
-            background: var(--card); 
-            backdrop-filter: blur(12px); 
-            border: 1px solid rgba(255, 215, 0, 0.1);
+
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.3s ease;
         }
-        .glass-card:hover { border-color: var(--gold); transform: translateY(-2px); }
-        .text-gold { color: var(--gold); }
-        .bg-gold { background-color: var(--gold); }
-        .border-gold { border-color: var(--gold); }
+
+        .glass-card:hover {
+            border-color: var(--hadi-gold);
+            transform: translateY(-2px);
+        }
+
+        .skill-tag {
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--hadi-gold);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
         .gradient-text {
-            background: linear-gradient(to right, #FFD700, #ff9900);
+            background: linear-gradient(to right, #FFD700, #ff8c00);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="antialiased selection:bg-gold selection:text-black">
+<body class="p-4 md:p-12">
 
-    <div class="max-w-6xl mx-auto px-6 py-12 md:py-20">
+    <div class="max-w-5xl mx-auto">
         
-        <header class="flex flex-col md:flex-row justify-between items-center mb-20 gap-8">
-            <div class="text-center md:text-left">
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4">
-                    M. <span class="gradient-text uppercase">Noman Ikram</span>
-                </h1>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm font-semibold uppercase tracking-widest text-gray-400">
-                    <span>Systems Specialist</span>
-                    <span class="text-gold">•</span>
-                    <span>Full Stack Developer</span>
-                    <span class="text-gold">•</span>
-                    <span>Automation Expert</span>
-                </div>
-            </div>
-            <div class="flex gap-4">
-                <a href="#" class="bg-gold hover:scale-105 transition px-8 py-3 rounded-full text-black font-bold shadow-[0_0_20px_rgba(255,215,0,0.3)]">Download CV</a>
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4 whitespace-nowrap">
+                M. <span class="gradient-text uppercase">NOMAN IKRAM</span>
+            </h1>
+            <p class="text-zinc-400 font-bold uppercase tracking-[0.3em] text-xs">Software Engineer & ERP Systems Specialist</p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mt-8 text-sm text-zinc-300">
+                <a href="mailto:noman@example.com" class="hover:text-gold transition flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-gold"></i> nomanikram@email.com
+                </a>
+                <a href="tel:+923001234567" class="hover:text-gold transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-gold"></i> +92 300 0000000
+                </a>
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-gold"></i> Lahore, Pakistan
+                </span>
+                <a href="https://wa.me/923000000000" class="hover:text-green-400 transition flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-green-500"></i> WhatsApp
+                </a>
             </div>
         </header>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
-            <aside class="lg:col-span-4 space-y-10">
+            <div class="space-y-8">
                 
-                <section class="glass-card p-8 rounded-3xl">
-                    <h3 class="text-gold font-bold mb-6 flex items-center gap-2">
-                        <span class="w-2 h-2 bg-gold rounded-full"></span> CONTACT
-                    </h3>
-                    <ul class="space-y-4 text-sm">
-                        <li class="flex justify-between"><span class="text-gray-500">Location</span><span>Lahore, PK</span></li>
-                        <li class="flex justify-between"><span class="text-gray-500">GitHub</span><span class="text-gold">@m_noman_ikram</span></li>
-                        <li class="flex justify-between"><span class="text-gray-500">Status</span><span class="text-green-400">Available for Projects</span></li>
-                    </ul>
-                </section>
-
-                <section class="glass-card p-8 rounded-3xl">
-                    <h3 class="text-gold font-bold mb-6 flex items-center gap-2">
-                        <span class="w-2 h-2 bg-gold rounded-full"></span> CORE TECH
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">Python/Flask</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">SQLAlchemy</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">Termux Automation</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">ERP Data Mgmt</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">Tailwind CSS</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-lg text-xs">MySQL</span>
+                <section class="glass-card p-6 rounded-3xl">
+                    <h3 class="text-gold font-black text-sm uppercase tracking-widest mb-6 border-b border-white/10 pb-2">Professional Skills</h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-[10px] text-zinc-500 font-bold mb-2 uppercase">Backend & Automation</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Python</span> <span class="skill-tag">Flask</span>
+                                <span class="skill-tag">SQLAlchemy</span> <span class="skill-tag">SocketIO</span>
+                                <span class="skill-tag">Rclone Sync</span> <span class="skill-tag">XOR Encryption</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-zinc-500 font-bold mb-2 uppercase">Frontend & UI</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Tailwind CSS</span> <span class="skill-tag">Glassmorphism</span>
+                                <span class="skill-tag">PWA Development</span> <span class="skill-tag">Responsive Design</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-zinc-500 font-bold mb-2 uppercase">Industrial Tech</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">ERP Management</span> <span class="skill-tag">PPC Coordination</span>
+                                <span class="skill-tag">Production Planning</span>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
-                <section class="glass-card p-8 rounded-3xl">
-                    <h3 class="text-gold font-bold mb-6 flex items-center gap-2">
-                        <span class="w-2 h-2 bg-gold rounded-full"></span> EDUCATION
-                    </h3>
-                    <div class="space-y-6">
+                <section class="glass-card p-6 rounded-3xl">
+                    <h3 class="text-gold font-black text-sm uppercase tracking-widest mb-6 border-b border-white/10 pb-2">Education</h3>
+                    <div class="space-y-4">
                         <div>
-                            <p class="font-bold">DAE in Civil Engineering</p>
-                            <p class="text-xs text-gray-500">Technical Diploma</p>
+                            <h4 class="font-bold text-white">DAE in Civil Engineering</h4>
+                            <p class="text-xs text-zinc-500 italic uppercase">Technical Board</p>
                         </div>
                         <div>
-                            <p class="font-bold">ICs (Computer Science)</p>
-                            <p class="text-xs text-gray-500">Incomplete Undergraduate Study</p>
+                            <h4 class="font-bold text-white">ICs (Computer Science)</h4>
+                            <p class="text-xs text-zinc-500 italic uppercase">Undergraduate Study</p>
                         </div>
                         <div>
-                            <p class="font-bold">Matriculation</p>
-                            <p class="text-xs text-gray-500">Secondary School Certificate</p>
+                            <h4 class="font-bold text-white">Matriculation</h4>
+                            <p class="text-xs text-zinc-500 italic uppercase">Science Group</p>
                         </div>
                     </div>
                 </section>
-            </aside>
+            </div>
 
-            <div class="lg:col-span-8 space-y-12">
+            <div class="lg:col-span-2 space-y-8">
                 
-                <section>
-                    <h2 class="text-3xl font-bold mb-6">About <span class="text-gold">Me</span></h2>
-                    <p class="text-gray-400 leading-relaxed">
-                        Accomplished Systems Specialist currently managing ERP operations within the knitting unit at <span class="text-white font-semibold">Sapphire Fibers Limited</span>. I specialize in the intersection of industrial production and digital automation. From managing real-time fabric dispatch logic to developing custom Python-based tools, I bridge the gap between physical manufacturing and software efficiency.
+                <section class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-gold font-black text-sm uppercase tracking-widest mb-4">About Me</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Full-stack developer and industrial systems expert with a focus on high-performance web applications and automated industrial workflows. Currently optimizing resource planning at <span class="text-white font-bold">Sapphire Fibers Limited</span>, I bridge the gap between complex backend logic (Python/Flask) and seamless, professional user experiences.
                     </p>
                 </section>
 
-                <section>
-                    <h2 class="text-3xl font-bold mb-8">Work Experience</h2>
-                    <div class="space-y-8">
-                        <div class="relative pl-8 border-l-2 border-gold/20">
-                            <div class="absolute w-4 h-4 bg-gold rounded-full -left-[9px] top-1"></div>
-                            <div class="flex flex-col md:flex-row justify-between mb-2">
-                                <h4 class="text-xl font-bold">Data Entry Operator (ERP User)</h4>
-                                <span class="text-gold text-sm font-mono">2025 — PRESENT</span>
+                <section class="space-y-6">
+                    <h3 class="text-gold font-black text-sm uppercase tracking-widest px-2">Work Experience</h3>
+                    
+                    <div class="glass-card p-8 rounded-3xl relative">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h4 class="text-xl font-extrabold">Data Entry Operator (ERP)</h4>
+                                <p class="text-gold font-bold text-xs uppercase">Sapphire Fibers Limited | Knitting Unit</p>
                             </div>
-                            <p class="text-gray-500 mb-4">Sapphire Fibers Limited | Knitting Unit</p>
-                            <ul class="text-sm text-gray-400 space-y-2 list-disc list-inside">
-                                <li>Orchestrate daily fabric feeding and dispatch operations via ERP systems.</li>
-                                <li>Execute production "Lot" creation based on PPC (Production Planning Control) mandates.</li>
-                                <li>Synchronize machine-fabric alignment to ensure zero-lag in dispatch cycles.</li>
-                                <li>Maintain 100% accuracy in high-volume fabric data logging for industrial audits.</li>
-                            </ul>
+                            <span class="text-[10px] bg-white/5 px-3 py-1 rounded-full font-mono">2025 — Present</span>
                         </div>
+                        <ul class="text-zinc-400 text-sm space-y-2 list-none">
+                            <li class="flex gap-2"><i class="fa-solid fa-caret-right text-gold mt-1"></i> Facilitate full-cycle fabric roll feeding and dispatch processing within the corporate ERP system.</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-caret-right text-gold mt-1"></i> Collaborate with PPC to manage production "Lots" and ensure machine alignment with planning schedules.</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-caret-right text-gold mt-1"></i> Manage daily dispatch orders ensuring 100% data integrity and inventory accuracy.</li>
+                        </ul>
+                    </div>
 
-                        <div class="relative pl-8 border-l-2 border-gold/20">
-                            <div class="absolute w-4 h-4 bg-white/20 rounded-full -left-[9px] top-1"></div>
-                            <div class="flex flex-col md:flex-row justify-between mb-2">
-                                <h4 class="text-xl font-bold text-gray-300">Clerk</h4>
-                                <span class="text-gray-500 text-sm font-mono">2022 — 2025</span>
+                    <div class="glass-card p-8 rounded-3xl">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h4 class="text-xl font-extrabold text-zinc-300">Clerk</h4>
+                                <p class="text-zinc-500 font-bold text-xs uppercase">Production Department</p>
                             </div>
-                            <p class="text-gray-500 mb-2">Production Department</p>
-                            <p class="text-sm text-gray-400 italic">Managed documentation, inventory logs, and departmental reporting within the manufacturing floor.</p>
+                            <span class="text-[10px] bg-white/5 px-3 py-1 rounded-full font-mono">2022 — 2025</span>
                         </div>
+                        <p class="text-zinc-500 text-sm italic">Oversaw departmental documentation, production logs, and inter-departmental reporting.</p>
                     </div>
                 </section>
 
-                <section>
-                    <h2 class="text-3xl font-bold mb-8">Featured Projects</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <section class="space-y-6">
+                    <h3 class="text-gold font-black text-sm uppercase tracking-widest px-2">Software Ecosystem (Hadi88)</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="glass-card p-6 rounded-2xl">
-                            <h4 class="font-bold text-gold mb-2">Hadi88 SMM Panel</h4>
-                            <p class="text-xs text-gray-400">A full-stack social marketing platform with automated service tiers and subscription logic.</p>
+                            <h5 class="font-black text-white text-sm mb-1 uppercase">EngageX SMM Panel</h5>
+                            <p class="text-[10px] text-zinc-500 mb-4">Automated Marketing Platform</p>
+                            <a href="https://panelpromax.pythonanywhere.com" class="text-gold text-[10px] font-bold underline">VISIT PROJECT</a>
                         </div>
                         <div class="glass-card p-6 rounded-2xl">
-                            <h4 class="font-bold text-gold mb-2">Ludo Pro Multiplayer</h4>
-                            <p class="text-xs text-gray-400">Real-time multiplayer game built with Flask-SocketIO and custom UI logic.</p>
+                            <h5 class="font-black text-white text-sm mb-1 uppercase">FinControl Pro</h5>
+                            <p class="text-[10px] text-zinc-500 mb-4">XOR Encrypted Finance Manager</p>
+                            <a href="https://myfin.pythonanywhere.com/login?next=%2F" class="text-gold text-[10px] font-bold underline">VISIT PROJECT</a>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h5 class="font-black text-white text-sm mb-1 uppercase">StudyKit Brain</h5>
+                            <p class="text-[10px] text-zinc-500 mb-4">AI Cognitive Mastery Hub</p>
+                            <a href="https://Hadinoman.pythonanywhere.com" class="text-gold text-[10px] font-bold underline">VISIT PROJECT</a>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h5 class="font-black text-white text-sm mb-1 uppercase">Hadi88 Messenger</h5>
+                            <p class="text-[10px] text-zinc-500 mb-4">Real-Time PWA Web Chat</p>
+                            <span class="text-zinc-600 text-[10px] font-bold italic">PROPRIETARY</span>
                         </div>
                     </div>
                 </section>
-
             </div>
         </div>
 
-        <footer class="mt-24 pt-8 border-t border-white/5 text-center text-xs text-gray-600 tracking-widest uppercase">
-            Designed for m_noman_ikram &copy; March 2026
+        <footer class="mt-20 py-8 border-t border-white/5 text-center">
+            <p class="text-[10px] text-zinc-600 font-bold uppercase tracking-[0.4em]">
+                &copy; 2026 M_NOMAN_IKRAM // HADI88 SOFTWARE LABORATORY
+            </p>
         </footer>
     </div>
 
 </body>
-                                                                  </html>
-                                                                  
+                                </html>
+    
