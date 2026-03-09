@@ -1,0 +1,39 @@
+{
+  "name": "Hadi88 Ecosystem",
+  "short_name": "Hadi88",
+  "description": "Professional suite for social growth, secure messaging, and financial mastery.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#ff8c00",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "a.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "a.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "a.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "a.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Hadi88 Home Screen"
+    }
+  ]
+}
